@@ -6,3 +6,12 @@
 # Абракадабра
 # Вывод
 # а-5 б-2 д-1 к-1 р-2
+
+strIn = input().lower()
+lstIn = list(strIn)
+dictIn = dict()
+for sym in strIn:
+    dictIn.setdefault(sym, str(lstIn.count(sym)))
+
+print(dictIn)
+
